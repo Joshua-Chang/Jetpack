@@ -12,8 +12,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/app/navigation" />
             <option value="$PROJECT_DIR$/navigation" />
+            <option value="$PROJECT_DIR$/workmanger" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

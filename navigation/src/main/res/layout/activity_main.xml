@@ -18,6 +18,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 <!--    app:defaultNavHost="true" 可以拦截back键，实现fragment间回退-->
+<!--    app:navGraph="@navigation/mobile_navigation" 配置导航图-->
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"

@@ -5,8 +5,10 @@ import android.os.Bundle;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
@@ -16,6 +18,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //手动绑定
+//        NavHostFragment navHostFragment = NavHostFragment.create(R.navigation.mobile_navigation);
+//        getSupportFragmentManager().beginTransaction()
+//                .replace(R.id.nav_host_fragment,navHostFragment)
+//                .setPrimaryNavigationFragment(navHostFragment)
+//                .commit();
+
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -27,4 +37,10 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
+    //手动添加
+//    @Override
+//    public boolean onSupportNavigateUp() {
+//        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.navigation_dashboard);
+//        return NavHostFragment.findNavController(fragment).navigateUp();
+//    }
 }

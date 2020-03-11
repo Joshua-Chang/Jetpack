@@ -40,13 +40,7 @@ public class HomeFragment extends Fragment {
         view.findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.action_page3);
-            }
-        });
-        view.findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.action_page1);
+                Navigation.findNavController(view).navigate(R.id.action_page2);
             }
         });
 
